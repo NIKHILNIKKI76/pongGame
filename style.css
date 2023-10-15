@@ -26,8 +26,7 @@
   }
 
   #dropDownToIncreaseWidth{
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 100px;
     font-weight: bold;
   }
   #navbarBrand{
@@ -37,4 +36,5 @@
 #instructionPara{
     color: rgb(46, 15, 15);
     font-style: italic;
+    padding-left: 6px;
 }
