@@ -10,12 +10,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="navbarBrand" href="#">PongGame</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a  id="dropDownToIncreaseWidth"  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Player Instructions 
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- <li><a class="dropdown-item" href="#">Action</a></li> -->
+                  <li>
+                    <p class="dropdown-item wrap-text" >
+                        <p id="instructionPara">
+                            In the PongGame project, there are two players who control paddles.
+                             Player 2 operates their paddle with the up and down arrow keys, while
+                              Player 1 uses the 'W' key for moving up and the 'S' key for moving down.
+                               Importantly, even in the pause state, the paddles continue to respond 
+                               to 'W,' 'S,' as well as the up and down arrow inputs from the players.
+                        </p>
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
     <div id="gameContainer">
         <canvas id="gameBoard" width="500" height="500"></canvas>
         <div id="scoreText">0 : 0</div>
         <button  class="btn btn-outline-dark" id="pauseBtn">Pause</button>
-        <button  class="btn btn-outline-dark" id="resetBtn">Reset</button>    </div>
-    <script src="index.js"></script>
+        <button  class="btn btn-outline-dark" id="resetBtn">Reset</button>    
+    </div> 
+     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+    "></script>
 </body>
 </html>

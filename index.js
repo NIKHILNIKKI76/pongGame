@@ -13,7 +13,7 @@ const paddleBorder = "black";
 const ballColor = "yellow";
 const ballBorderColor = "black";
 const ballRadius = 12.5;
-const paddleSpeed = 50;
+const paddleSpeed = 70;
 
 let intervalID;
 let ballSpeed;
@@ -94,7 +94,8 @@ function drawPaddles(){
 };
 
 function createBall(){
-    ballSpeed = 1;
+    tempBallSpeed= 1;
+    ballSpeed=tempBallSpeed;
     if(Math.round(Math.random()) == 1){
         ballXDirection = 1; 
     }
@@ -112,8 +113,10 @@ function createBall(){
     // drawBall(ballX, ballY);
 };
 function moveBall(){
+
     ballX += (ballSpeed * ballXDirection);
     ballY += (ballSpeed * ballYDirection);
+
 };
 function drawBall(ballX, ballY){
     ctx.fillStyle = ballColor;
@@ -123,6 +126,7 @@ function drawBall(ballX, ballY){
     ctx.arc(ballX, ballY, ballRadius, 0, 2 * Math.PI);
     ctx.stroke();
     ctx.fill();
+
 };
 function checkCollision(){
     if(ballY <= 0 + ballRadius){
@@ -151,6 +155,7 @@ function checkCollision(){
             tempBallSpeed +=1;
             ballSpeed = tempBallSpeed;
         }
+
     }
 
     if(ballX >= (paddle2.x - ballRadius)){

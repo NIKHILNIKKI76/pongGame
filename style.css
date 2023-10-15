@@ -20,3 +20,21 @@
     border-radius: 15px;
     cursor: pointer; */
 }
+
+.wrap-text {
+    word-wrap: break-word;
+  }
+
+  #dropDownToIncreaseWidth{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: bold;
+  }
+  #navbarBrand{
+    font-weight: bold;
+  }
+
+#instructionPara{
+    color: rgb(46, 15, 15);
+    font-style: italic;
+}
