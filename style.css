@@ -1,7 +1,9 @@
 #gameContainer{
     text-align: center;
 }
-
+/* *{
+  background-color: black;
+} */
 #gameBoard{
     border: 3px solid;
 }
@@ -37,4 +39,10 @@
     color: rgb(46, 15, 15);
     font-style: italic;
     padding-left: 6px;
+}
+
+#navImage{
+  width: 60px;
+  height: 40px;
+  padding-right: 15px;
 }
