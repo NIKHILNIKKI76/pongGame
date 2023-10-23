@@ -15,6 +15,7 @@ const ballBorderColor = "black";
 const ballRadius = 12.5;
 const paddleSpeed = 70;
 
+
 let intervalID;
 let ballSpeed;
 let tempBallSpeed = 1;
@@ -46,6 +47,8 @@ gameStart();
 clearBoard();
 drawPaddles();
 drawBall(ballX, ballY);
+
+
 function startStopFun(){
     if(startStopBtn.textContent == "Resume"){
         ballSpeed = tempBallSpeed;
@@ -227,3 +230,5 @@ function resetGame(){
     clearInterval(intervalID);
     gameStart();
 };
+
+
